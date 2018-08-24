@@ -2,11 +2,11 @@
 
 class Foo {
   constructor () {
-    console.log('bar');
+    console.log('bar')
   }
 
   bar () {
-    return 'bar';
+    return 'bar'
   }
 }
 

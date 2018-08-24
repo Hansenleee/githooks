@@ -56,6 +56,8 @@ let lintFileList = lintFiles
 let pkgMode = PACKAGE.config && PACKAGE.config.lint && PACKAGE.config.lint.mode
 let lint = new Lint(lintFileList, Lint.MODE_MAP[pkgMode] || Lint.MODE_MAP.strict)
 
+echo(lintFileList)
+
 let pass = lint.exec()
 
 if (!pass) {

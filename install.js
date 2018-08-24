@@ -9,6 +9,7 @@ let pkgName = require('./package.json').name
 
 // 文件夹选择
 let hook = path.resolve(__dirname, 'hook')
+// 显示当前git的工作目录
 let root = exec('git rev-parse --show-toplevel').stdout.replace('\n', '')
 let git = path.resolve(root, '.git')
 let hooks = path.resolve(git, 'hooks')

@@ -5,7 +5,7 @@ module.exports = {
     "promise"
   ],
   "rules": {
-    "semi": [2]
+    "semi": [1, 'never'],
   },
   "globals": {
     "echo": true,

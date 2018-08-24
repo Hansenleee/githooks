@@ -8,9 +8,11 @@ export PATH="$NODEJSPATH":$PATH
 # and see if it works in the current environment
 #
 if [[ $* == *--dry-run* ]]; then
+  echo "1"
   if [[ -z "$BINARY" ]]; then
     exit 1
   fi
 else
+  echo "2"
   "$BINARY" "$("$BINARY" -e "console.log(require.resolve('$TASK'))")"
 fi

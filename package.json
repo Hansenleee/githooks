@@ -1,0 +1,67 @@
+{
+  "_from": "@xkeshi/githooks@^1.1.2",
+  "_id": "@xkeshi/githooks@1.1.3",
+  "_inBundle": false,
+  "_integrity": "sha1-YSmv5vH9iPrvFEzn6ZwC1yqHxX8=",
+  "_location": "/@xkeshi/githooks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@xkeshi/githooks@^1.1.2",
+    "name": "@xkeshi/githooks",
+    "escapedName": "@xkeshi%2fgithooks",
+    "scope": "@xkeshi",
+    "rawSpec": "^1.1.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.2"
+  },
+  "_requiredBy": [
+    "/@xkeshi/koa2-vue2-deps"
+  ],
+  "_resolved": "http://registry.fe.xkeshi.cn/@xkeshi/githooks/download/@xkeshi/githooks-1.1.3.tgz",
+  "_shasum": "6129afe6f1fd88faef144ce7e99c02d72a87c57f",
+  "_spec": "@xkeshi/githooks@^1.1.2",
+  "_where": "/Users/libin/project/GIT/take-coupons/node_modules/@xkeshi/koa2-vue2-deps",
+  "author": {
+    "name": "wj"
+  },
+  "bugs": {
+    "url": "https://github.com/sydeEvans/githooks/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "conventional-commit-types": "^2.0.0",
+    "globule": "^1.0.0",
+    "iconv-lite": "^0.4.13",
+    "semver-regex": "1.0.0",
+    "shelljs": "^0.7.3"
+  },
+  "deprecated": false,
+  "description": "git 钩子",
+  "devDependencies": {
+    "@types/node": "^6.0.41",
+    "chai": "^3.5.0",
+    "eslint": "^3.7.1",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "mocha": "^3.1.0"
+  },
+  "homepage": "https://github.com/sydeEvans/githooks#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@xkeshi/githooks",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sydeEvans/githooks.git"
+  },
+  "scripts": {
+    "install": "node install.js",
+    "lint": "node script/pre-commit",
+    "lint-fix": "eslint ./**/*.js --fix",
+    "test": "mocha --recursive -w",
+    "uninstall": "node uninstall.js"
+  },
+  "version": "1.1.3"
+}

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+BINARY="$NODEJS"
+export PATH="$NODEJSPATH":$PATH
+#
+# Add --dry-run cli flag support so we can execute this hook without side affects
+# and see if it works in the current environment
+#
+if [[ $* == *--dry-run* ]]; then
+  if [[ -z "$BINARY" ]]; then
+    exit 1
+  fi
+else
+  "$BINARY" "$("$BINARY" -e "console.log(require.resolve('$TASK'))")"
+fi

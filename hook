@@ -12,5 +12,6 @@ if [[ $* == *--dry-run* ]]; then
     exit 1
   fi
 else
+  echo "2"
   "$BINARY" "$("$BINARY" -e "console.log(require.resolve('$TASK'))")"
 fi

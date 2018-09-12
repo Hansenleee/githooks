@@ -6,7 +6,7 @@ class Foo {
   }
 
   bar () {
-    return 'bar'
+    return 'bar';
   }
 }
 
